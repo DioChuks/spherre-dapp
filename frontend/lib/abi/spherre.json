@@ -1,0 +1,127 @@
+[
+  {
+    "name": "grant_superadmin_role",
+    "type": "function",
+    "inputs": [
+      { "name": "account", "type": "ContractAddress" }
+    ],
+    "outputs": [],
+    "stateMutability": "external"
+  },
+  {
+    "name": "grant_staff_role",
+    "type": "function",
+    "inputs": [
+      { "name": "account", "type": "ContractAddress" }
+    ],
+    "outputs": [],
+    "stateMutability": "external"
+  },
+  {
+    "name": "revoke_superadmin_role",
+    "type": "function",
+    "inputs": [
+      { "name": "account", "type": "ContractAddress" }
+    ],
+    "outputs": [],
+    "stateMutability": "external"
+  },
+  {
+    "name": "revoke_staff_role",
+    "type": "function",
+    "inputs": [
+      { "name": "account", "type": "ContractAddress" }
+    ],
+    "outputs": [],
+    "stateMutability": "external"
+  },
+  {
+    "name": "has_staff_role",
+    "type": "function",
+    "inputs": [
+      { "name": "account", "type": "ContractAddress" }
+    ],
+    "outputs": [
+      { "type": "bool" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "has_superadmin_role",
+    "type": "function",
+    "inputs": [
+      { "name": "account", "type": "ContractAddress" }
+    ],
+    "outputs": [
+      { "type": "bool" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "pause",
+    "type": "function",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "external"
+  },
+  {
+    "name": "unpause",
+    "type": "function",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "external"
+  },
+  {
+    "name": "deploy_account",
+    "type": "function",
+    "inputs": [
+      { "name": "owner", "type": "ContractAddress" },
+      { "name": "name", "type": "ByteArray" },
+      { "name": "description", "type": "ByteArray" },
+      { "name": "members", "type": "ContractAddress[]" },
+      { "name": "threshold", "type": "u64" }
+    ],
+    "outputs": [
+      { "type": "ContractAddress" }
+    ],
+    "stateMutability": "external"
+  },
+  {
+    "name": "is_deployed_account",
+    "type": "function",
+    "inputs": [
+      { "name": "account", "type": "ContractAddress" }
+    ],
+    "outputs": [
+      { "type": "bool" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "update_account_class_hash",
+    "type": "function",
+    "inputs": [
+      { "name": "new_class_hash", "type": "ClassHash" }
+    ],
+    "outputs": [],
+    "stateMutability": "external"
+  },
+  {
+    "name": "get_account_class_hash",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      { "type": "ClassHash" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "upgrade",
+    "type": "function",
+    "inputs": [
+      { "name": "new_class_hash", "type": "ClassHash" }
+    ],
+    "outputs": [],
+    "stateMutability": "external"
+  }
+]
